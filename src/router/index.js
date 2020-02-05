@@ -23,7 +23,14 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior: () => ({ x: 0, y: 0 })
 })
+
+router.beforeEach((to, from, next) => {
+  const routeExist = to.matched.some(record => record);
+  if (!routeExist) next({ name: "main" });
+  else next();
+});
 
 export default router
