@@ -5,7 +5,7 @@ body
   font-size: 100%
   text-rendering: optimizeLegibility
   font-family: $text-font
-  color: $mid_gray
+  color: $dark_gray
   background-color: $white
 h1,
 h2,
@@ -14,3 +14,12 @@ h4,
 h5,
 h6
   font-family: $head-font
+  margin: 0
+
+a
+  font-family: $head-font
+  font-weight: bold
+  color: $light_gray
+  transition: color .1s ease-in-out
+  &:hover
+    color: $black

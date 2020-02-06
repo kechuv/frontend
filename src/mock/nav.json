@@ -1,0 +1,8 @@
+{
+  "mainNav": [
+    {
+      "name": "Home",
+      "route": "home"
+    }
+  ]
+}

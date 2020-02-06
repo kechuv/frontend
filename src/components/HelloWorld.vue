@@ -27,7 +27,7 @@ export default {
     };
   },
   beforeMount: async function() {
-    await this.getProducts();
+    // await this.getProducts();
   },
   methods: {
     getProducts: async function() {
